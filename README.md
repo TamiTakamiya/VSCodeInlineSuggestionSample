@@ -18,5 +18,3 @@ Install [Ansible VS Code Extension by Red Hat](https://marketplace.visualstudio.
 4. Enter a new line. Cursor should move to column 5 of line 6, which is the only position
 this sample inline suggestion sample provides an inline suggestion.
     - If you have enabled [Ansible Lightspeed](https://www.redhat.com/en/technologies/management/ansible/ansible-lightspeed), you will see the suggestion from Ansible Lightspeed as well.
-
-![](inlineSuggestion.mp4)
