@@ -2,20 +2,4 @@
 node_modules
 *.vsix
 out
-test-resources
-test-resources-oldest
-.vscode-test
-CHANGELOG.html
-*.tgz
-.task
-# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-.DS_Store
-.direnv
-coverage
-.nyc_output
+tsconfig.tsbuildinfo 

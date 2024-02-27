@@ -16,27 +16,13 @@
 	"categories": [
 		"Other"
 	],
-	"activationEvents": [],
+	"activationEvents": [
+		"onLanguage:ansible"
+	],
 	"main": "./out/extension",
 	"keywords": [
 		"inline suggestion"
 	],
-	"contributes": {
-		"configuration": [
-			{
-				"title": "Inline Suggestion Sample",
-				"properties": {
-					"inlineSuggestionSample.enabled": {
-						"scope": "resource",
-						"type": "boolean",
-						"default": false,
-						"markdownDescription": "Enable Inline Suggestion Sample",
-						"order": 0
-					}
-				}
-			}
-		]
-	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
