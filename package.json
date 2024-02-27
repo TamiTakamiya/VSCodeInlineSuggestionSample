@@ -1,0 +1,54 @@
+{
+	"name": "vscode-inline-suggestion-sample",
+	"displayName": "VSCode Inline Suggestion Sample",
+	"description": "How to use inline suggesion in VS Code",
+	"version": "0.0.1",
+	"publisher": "Tami Takamiya",
+	"private": true,
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/TamiTakamiya/vscode-inline-suggestion-sample"
+	},
+	"engines": {
+		"vscode": "^1.85.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./out/extension",
+	"keywords": [
+		"inline suggestion"
+	],
+	"contributes": {
+		"configuration": [
+			{
+				"title": "Inline Suggestion Sample",
+				"properties": {
+					"inlineSuggestionSample.enabled": {
+						"scope": "resource",
+						"type": "boolean",
+						"default": false,
+						"markdownDescription": "Enable Inline Suggestion Sample",
+						"order": 0
+					}
+				}
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint \"src/**/*.ts\"",
+		"watch": "tsc -watch -p ./",
+		"package": "npx vsce package"
+	},
+	"devDependencies": {
+		"@types/node": "^20.11.7",
+		"@types/vscode": "^1.85.0",
+		"@typescript-eslint/eslint-plugin": "^6.19.1",
+		"@typescript-eslint/parser": "^6.19.1",
+		"eslint": "^8.56.0"
+	}
+}
