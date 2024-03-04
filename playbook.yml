@@ -3,4 +3,3 @@
   hosts: all
   tasks:
     - name: print hello
-    **** I'm not a pilot ****
